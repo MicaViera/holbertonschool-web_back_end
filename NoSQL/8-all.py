@@ -8,4 +8,4 @@ def list_all(mongo_collection):
     all_docs = mongo_collection.find()
     if not all_docs:
         return []
-    return documents
+    return all_docs
