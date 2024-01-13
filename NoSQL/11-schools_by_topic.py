@@ -5,4 +5,4 @@ from pymongo import MongoClient
 
 def schools_by_topic(mongo_collection, topic):
     """"Function that returns the list."""
-    return mongo_collection.find({"topic": topic})
+    return mongo_collection.find({"topics": topic})
