@@ -34,6 +34,7 @@ class Server:
         self.dataset()
         return self.__dataset[pages[0]:pages[1]]
 
+
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """Function that returns a tuple."""
     total_size = page * page_size
