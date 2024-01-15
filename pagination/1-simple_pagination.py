@@ -27,12 +27,12 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-            """Method that returns a page."""
-            assert isinstance(page, int) and page > 0
-            assert isinstance(page_size, int) and page_size > 0
-            pages = index_range(page, page_size)
-            self.dataset()
-            return self.__dataset[pages[0]:pages[1]]
+        """Method that returns a page."""
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
+        pages = index_range(page, page_size)
+        self.dataset()
+        return self.__dataset[pages[0]:pages[1]]
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """Function that returns a tuple."""
