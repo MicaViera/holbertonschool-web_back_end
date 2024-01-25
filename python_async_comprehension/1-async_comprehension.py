@@ -6,8 +6,6 @@ async_generator = __import__("0-async_generator").async_generator
 
 
 async def async_comprehension() -> List[float]:
-    """Function that loops 10 times asynchronously."""
-    random_numbers = []
-    async for index in async_generator():
-        random_numbers.append(index)
+    """Function that will collect 10 random numbers."""
+    random_numbers = [index async for index in async_generator()]
     return random_numbers
