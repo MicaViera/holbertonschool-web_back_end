@@ -9,11 +9,12 @@ from typing import List
 
 
 class Server:
-    """Server class to paginate a database of popular baby names.
-    """
+    """Server class to paginate a database of popular baby names."""
+
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
+        """Method constructor"""
         self.__dataset = None
         self.__indexed_dataset = None
 
@@ -41,4 +42,4 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """Method that returns a dictionary with pairs of key and value."""
-      pass
+        pass
